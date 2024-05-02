@@ -1214,7 +1214,7 @@ function clear() {
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
-            third.style.display = "block"
+            roads[0].style.display = "block"
         } else if(destination.value === "地址2"){
             clear()
             list.style.display = "inline-block"
@@ -1245,6 +1245,9 @@ function clear() {
             first.style.display = "none";
             second.style.display = "none"
             roads[5].style.display = "block"
+        }else {
+            alert("目的地暂不存在,请重新输入")
+            destination.value = ""
         }
     });
     var point = document.getElementById('point');
@@ -1252,19 +1255,21 @@ function clear() {
     point.addEventListener("click", function() {
         // 切换显示状态
         if (first.style.display === "none") {
+            clear()
+            destination.value =""
             list.style.display = "none"
             first.style.display = "block";
             second.style.display = "none"
-            third.style.display = "none"
         }
     });
     hot.addEventListener("click", function() {
         // 切换显示状态
         if (second.style.display === "none") {
+            clear()
+            destination.value =""
             list.style.display = "none"
             first.style.display = "none";
             second.style.display = "block"
-            third.style.display = "none"
         }
     });
 

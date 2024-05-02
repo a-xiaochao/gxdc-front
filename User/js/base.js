@@ -14,12 +14,12 @@ var timer = setInterval(function () {
     var date = new Date();
     var year = date.getFullYear(); //当前年份
     var month = date.getMonth(); //当前月份
-    var data = date.getDate()-1; //天
-    var hours = date.getHours()+7; //小时
+    var data = date.getDate(); //天
+    var hours = date.getHours(); //小时
     var minute = date.getMinutes(); //分
     var second = date.getSeconds(); //秒
 
-    var day = date.getDay()+6; //获取当前星期几
+    var day = date.getDay(); //获取当前星期几
 
     var weekDays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
     var day = weekDays[day];
