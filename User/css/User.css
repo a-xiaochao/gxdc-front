@@ -1,3 +1,15 @@
+.center-bottom {
+    overflow: hidden;
+    height: 870px;
+}
+
+.center-bottom .chart-box {
+    top: 5px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
 .box-center .btn {
     width: 100px;
     height: 40px;

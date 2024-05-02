@@ -1,25 +1,33 @@
-#FontScroll{
-    height: 730px;
+.center-bottom {
+  overflow: hidden;
+  height: 870px;
+}
+
+.center-bottom .chart-box {
+  top: 5px;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+#FontScroll {
+  height: 730px;
 }
 #rightBottom {
-    display: none;
+  display: none;
 }
 .settings-box #list {
-    display: block;
-    margin-top: 20px;
-    margin-left: 30px;
+  display: block;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 .settings-box .gun span {
-    width: 80px;
-    margin-left: 20px;
-    font-size: 20px;
+  width: 80px;
+  margin-left: 20px;
+  font-size: 20px;
 }
 .settings-box .fontInner span {
-    margin-top: 10px;
-    margin-left: -35px;
-    margin-right: 10px;
-    width: 150px;
+  margin-top: 10px;
+  margin-left: -35px;
+  margin-right: 10px;
+  width: 150px;
 }
-
-
-
