@@ -282,7 +282,18 @@
                         </div>
 
                         <label for="destination">目的地</label>
-                        <input type="text" id="destination" name="destination" required autocomplete="off">
+                       <!-- <input type="text" id="destination" name="destination" required autocomplete="off">-->
+                        <select id="destination" name="destination">
+                            <option value="option3" selected>--请选择--</option>
+                            <option value="永年天墅北门">永年天墅北门</option>
+                            <option value="厦门市肝病中心">厦门市肝病中心</option>
+                            <option value="汇利商业中心">汇利商业中心</option>
+                            <option value="尚文实验学校">尚文实验学校</option>
+                            <option value="忠仑公园">忠仑公园</option>
+                            <option value="假日花园">假日花园</option>
+
+
+                        </select>
                         <br>
                         <label for="arrival_time">预计出发时间</label>
                         <input type="time" id="arrival_time" name="arrival_time" required>
@@ -1215,38 +1226,38 @@ function clear() {
             first.style.display = "none";
             second.style.display = "none"
             roads[0].style.display = "block"
-        } else if(destination.value === "地址2"){
+        } else if(destination.value === "厦门市肝病中心"){
             clear()
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
             roads[1].style.display = "block"
-        }else if(destination.value === "地址3"){
+        }else if(destination.value === "汇利商业中心"){
             clear()
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
             roads[2].style.display = "block"
-        }else if(destination.value === "地址4"){
+        }else if(destination.value === "尚文实验学校"){
             clear()
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
             roads[3].style.display = "block"
-        }else if(destination.value === "地址5"){
+        }else if(destination.value === "忠仑公园"){
             clear()
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
             roads[4].style.display = "block"
-        }else if(destination.value === "地址6"){
+        }else if(destination.value === "假日花园"){
             clear()
             list.style.display = "inline-block"
             first.style.display = "none";
             second.style.display = "none"
             roads[5].style.display = "block"
         }else {
-            alert("目的地暂不存在,请重新输入")
+            alert("目的地暂不存在,请重新选择。（静态数据地址：永年天墅北门、厦门市肝病中心、汇利商业中心、尚文实验学校、忠仑公园、假日花园）")
             destination.value = ""
         }
     });
